@@ -14,9 +14,8 @@ Summary: Interactive Reingold-Tilford tree diagrams created using 'D3.js', where
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-collapsibletree-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-collapsibletree-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-collapsibletree-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-collapsibletree-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-collapsibletree-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-collapsibletree-feedstock)
 
 Current release info
 ====================
