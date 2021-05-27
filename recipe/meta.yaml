@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: collapsibleTree_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/collapsibleTree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/collapsibleTree/collapsibleTree_{{ version }}.tar.gz
@@ -17,7 +16,6 @@ build:
   noarch: generic
   merge_build_host: True  # [win]
   number: 1002
-  # skipping Windows b/c we are missing: r-data.tree -> r-diagrammer -> r-igraph
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,7 +39,7 @@ test:
 
 about:
   home: https://github.com/AdeelK93/collapsibleTree, https://AdeelK93.github.io/collapsibleTree/
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: Interactive Reingold-Tilford tree diagrams created using 'D3.js', where every
     node can be expanded and collapsed by clicking on it. Tooltips and color gradients
     can be mapped to nodes using a numeric column in the source data frame. See 'collapsibleTree'
@@ -52,10 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - halldc
