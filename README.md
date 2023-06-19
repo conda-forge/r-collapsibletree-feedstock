@@ -1,11 +1,11 @@
-About r-collapsibletree
-=======================
+About r-collapsibletree-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-collapsibletree-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/AdeelK93/collapsibleTree, https://AdeelK93.github.io/collapsibleTree/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-collapsibletree-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interactive Reingold-Tilford tree diagrams created using 'D3.js', where every node can be expanded and collapsed by clicking on it. Tooltips and color gradients can be mapped to nodes using a numeric column in the source data frame. See 'collapsibleTree' website for more information and examples.
 
