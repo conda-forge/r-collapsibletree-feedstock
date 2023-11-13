@@ -1,4 +1,4 @@
-{% set version = '0.1.7' %}
+{% set version = "0.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/collapsibleTree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/collapsibleTree/collapsibleTree_{{ version }}.tar.gz
-  sha256: 838cc2bf4dd9da8c5be7e6526bfd665ba294896e609888bdcafa5a1eeebac52c
+  sha256: 98c6dccebba9c488a8547bafaea3202e88c189451fd5f8fb6b1dd5c30bafb6c4
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1004
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,10 +40,7 @@ test:
 about:
   home: https://github.com/AdeelK93/collapsibleTree, https://AdeelK93.github.io/collapsibleTree/
   license: GPL-3.0-or-later
-  summary: Interactive Reingold-Tilford tree diagrams created using 'D3.js', where every
-    node can be expanded and collapsed by clicking on it. Tooltips and color gradients
-    can be mapped to nodes using a numeric column in the source data frame. See 'collapsibleTree'
-    website for more information and examples.
+  summary: Interactive Reingold-Tilford tree diagrams created using 'D3.js', where every node can be expanded and collapsed by clicking on it. Tooltips and color gradients can be mapped to nodes using a numeric column in the source data frame. See 'collapsibleTree' website for more information and examples.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
